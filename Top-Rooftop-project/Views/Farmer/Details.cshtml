@@ -1,0 +1,47 @@
+﻿@model Top_Rooftop_project.ModelVm.FarmerVm
+@{
+     Layout = "~/Views/Shared/_LayoutTemp.cshtml";
+}
+
+@if (Model != null)
+{
+
+    <div class="container" style="margin-top:150px">
+        <marquee id="marquee" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+            <h2>RootFloer Details</h2>
+        </marquee>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">@Model.Name</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@Model.Email</h6>
+                        <p class="card-text">
+                            ID: @Model.Id<br>
+                            Square Feet: @Model.SquarFeet<br>
+                            Location: @Model.Location<br>
+                            Price: @Model.Price
+                        </p>
+                        <p class="card-text">@Model.SomeDetails</p>
+                        <p>loremsdjfewljkrwerdsfjkljksadf</p>
+                        <p class="card-text">@Model.MoreDetails</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <img class="img-thumbnail float-left mr-2" src="~/Image/@Model.Image1" alt="Image 1">
+                        </li>
+                        <li class="list-group-item">
+                            <img class="img-thumbnail float-right ml-2" src="~/Image/@Model.Image2" alt="Image 2">
+                        </li>
+                        <li class="list-group-item">
+                            <img class="img-thumbnail float-left mr-2" src="~/Image/@Model.Image3" alt="Image 3">
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <p class="card-text">@Model.GoogleMap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Top_Rooftop_project.ModelVm.FarmerVm>
+@{
+    Layout = "~/Views/Shared/_LayoutTemp.cshtml";
+}
+
+
+@* @foreach(var item in Model)
+{
+
+    <div class="card" style="width: 18rem;">
+        <h5 class="card-title">@item.Name</h5>
+        <h5 class="card-title">@item.Email</h5>
+        <h5 class="card-title">@item.SquarFeet</h5>
+        <h5 class="card-title">@item.SquarFeet</h5>
+        <img class="card-img-top" src="~/Image/@item.Image1" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+
+}
+ *@
+
+@foreach (var item in Model)
+{
+    <div class="card" style="width: 18rem;">
+        <h5 class="card-title">@item.Name</h5>
+        <h5 class="card-title">@item.Email</h5>
+        <h5 class="card-title">@item.SquarFeet</h5>
+        <h5 class="card-title">@item.SquarFeet</h5>
+        <img class="card-img-top w-100" src="~/Image/@item.Image1" alt="Card image cap" style="height: 150px; ">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+}
+
